@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3f1e537a-167d-49a5-820d-ba8ec9abb8a6}</ProjectGuid>
+    <RootNamespace>OpenGLGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Gabe\OpenGL\OpenGL_Game\OpenGL_Game\ImGui\include;C:\Users\Gabe\Documents\NSFW Game\Libraries\glew-2.1.0-win32\glew-2.1.0\include;C:\Users\Gabe\Documents\NSFW Game\Libraries\glm-0.9.9.8;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2_mixer-devel-2.0.4-VC\SDL2_mixer-2.0.4\include;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2-devel-2.0.14-VC\SDL2-2.0.14\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Gabe\Documents\NSFW Game\Libraries\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2_mixer-devel-2.0.4-VC\SDL2_mixer-2.0.4\lib\x64;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Gabe\OpenGL\OpenGL_Game\OpenGL_Game\ImGui\include;C:\Users\Gabe\Documents\NSFW Game\Libraries\glew-2.1.0-win32\glew-2.1.0\include;C:\Users\Gabe\Documents\NSFW Game\Libraries\glm-0.9.9.8;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2_mixer-devel-2.0.4-VC\SDL2_mixer-2.0.4\include;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2-devel-2.0.14-VC\SDL2-2.0.14\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Gabe\Documents\NSFW Game\Libraries\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2_mixer-devel-2.0.4-VC\SDL2_mixer-2.0.4\lib\x64;C:\Users\Gabe\Documents\NSFW Game\Libraries\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;opengl32.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\glew-2.1.0-win32\glew-2.1.0\include;$(SolutionDir)Dependencies\glm-0.9.9.8\glm;$(SolutionDir)Dependencies\SDL2_mixer-2.0.4\include;$(SolutionDir)Dependencies\SDL2-devel-2.0.14-VC\SDL2-2.0.14\include;$(SolutionDir)OpenGL_Game\ImGui\include;$(SolutionDir)Dependencies\SDL2_ttf-2.0.15\include;$(SolutionDir)OpenGL_Game\SoLoud\include;$(SolutionDir)OpenGL_Game\EventSource</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(SolutionDir)Dependencies\SDL2_mixer-2.0.4\lib\x64;$(SolutionDir)Dependencies\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x64;$(SolutionDir)Dependencies\SDL2_ttf-2.0.15\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;opengl32.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\glew-2.1.0-win32\glew-2.1.0\include;$(SolutionDir)Dependencies\glm-0.9.9.8\glm;$(SolutionDir)Dependencies\SDL2_mixer-2.0.4\include;$(SolutionDir)Dependencies\SDL2-devel-2.0.14-VC\SDL2-2.0.14\include;$(SolutionDir)OpenGL_Game\ImGui\include;$(SolutionDir)Dependencies\SDL2_ttf-2.0.15\include;$(SolutionDir)OpenGL_Game\SoLoud\include;$(SolutionDir)OpenGL_Game\EventSource</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(SolutionDir)Dependencies\SDL2_mixer-2.0.4\lib\x64;$(SolutionDir)Dependencies\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x64;$(SolutionDir)Dependencies\SDL2_ttf-2.0.15\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;opengl32.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="cgltf.cpp" />
+    <ClCompile Include="DialogueBox.cpp" />
+    <ClCompile Include="DialogueBuilder.cpp" />
+    <ClCompile Include="EventMachine.cpp" />
+    <ClCompile Include="EventSource\EventIntro.cpp" />
+    <ClCompile Include="EventSource\EventStartH1.cpp" />
+    <ClCompile Include="EventSource\EventTest.cpp" />
+    <ClCompile Include="FontRenderer.cpp" />
+    <ClCompile Include="ImGui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="ImGui\backends\imgui_impl_sdl.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MapRenderer.cpp" />
+    <ClCompile Include="MapScene.cpp" />
+    <ClCompile Include="MenuScene.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="MusicManager.cpp" />
+    <ClCompile Include="NatGui.cpp" />
+    <ClCompile Include="OpenGL_Game.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="QuadAnimated.cpp" />
+    <ClCompile Include="QuadAnimationController.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="ScreenQuad.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="ShaderUtil.cpp" />
+    <ClCompile Include="SoLoud\audiosource\wav\dr_impl.cpp" />
+    <ClCompile Include="SoLoud\audiosource\wav\soloud_wav.cpp" />
+    <ClCompile Include="SoLoud\audiosource\wav\soloud_wavstream.cpp" />
+    <ClCompile Include="SoLoud\audiosource\wav\stb_vorbis.c" />
+    <ClCompile Include="SoLoud\backend\sdl2_static\soloud_sdl2_static.cpp" />
+    <ClCompile Include="SoLoud\backend\sdl\soloud_sdl1.cpp" />
+    <ClCompile Include="SoLoud\backend\sdl\soloud_sdl1_dll.c" />
+    <ClCompile Include="SoLoud\backend\sdl\soloud_sdl2.cpp" />
+    <ClCompile Include="SoLoud\backend\sdl\soloud_sdl2_dll.c" />
+    <ClCompile Include="SoLoud\core\soloud.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_audiosource.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_bus.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_3d.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_basicops.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_faderops.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_filterops.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_getters.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_setters.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_voicegroup.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_core_voiceops.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_fader.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_fft.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_fft_lut.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_file.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_filter.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_misc.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_queue.cpp" />
+    <ClCompile Include="SoLoud\core\soloud_thread.cpp" />
+    <ClCompile Include="stb_image.cpp" />
+    <ClCompile Include="stb_image_write.cpp" />
+    <ClCompile Include="stb_truetype.cpp" />
+    <ClCompile Include="TextureUtil.cpp" />
+    <ClCompile Include="TileManager.cpp" />
+    <ClCompile Include="TrueTypeFont.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="cgltf.h" />
+    <ClInclude Include="DialogueBox.h" />
+    <ClInclude Include="DialogueBuilder.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventMachine.h" />
+    <ClInclude Include="EventSource\EventIntro.h" />
+    <ClInclude Include="EventSource\EventStartH1.h" />
+    <ClInclude Include="EventSource\EventTest.h" />
+    <ClInclude Include="FontRenderer.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="ImGui\include\imconfig.h" />
+    <ClInclude Include="ImGui\include\imgui.h" />
+    <ClInclude Include="ImGui\include\imgui_impl_opengl3.h" />
+    <ClInclude Include="ImGui\include\imgui_impl_sdl.h" />
+    <ClInclude Include="ImGui\include\imgui_internal.h" />
+    <ClInclude Include="ImGui\include\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\include\imstb_textedit.h" />
+    <ClInclude Include="ImGui\include\imstb_truetype.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MapRenderer.h" />
+    <ClInclude Include="MapScene.h" />
+    <ClInclude Include="MenuScene.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="MusicManager.h" />
+    <ClInclude Include="NatGui.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="QuadAnimated.h" />
+    <ClInclude Include="QuadAnimationController.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="ScreenQuad.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="SoLoud\audiosource\wav\dr_flac.h" />
+    <ClInclude Include="SoLoud\audiosource\wav\dr_mp3.h" />
+    <ClInclude Include="SoLoud\audiosource\wav\dr_wav.h" />
+    <ClInclude Include="SoLoud\audiosource\wav\stb_vorbis.h" />
+    <ClInclude Include="SoLoud\include\soloud.h" />
+    <ClInclude Include="SoLoud\include\soloud_audiosource.h" />
+    <ClInclude Include="SoLoud\include\soloud_bassboostfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_biquadresonantfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_bus.h" />
+    <ClInclude Include="SoLoud\include\soloud_c.h" />
+    <ClInclude Include="SoLoud\include\soloud_dcremovalfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_echofilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_error.h" />
+    <ClInclude Include="SoLoud\include\soloud_fader.h" />
+    <ClInclude Include="SoLoud\include\soloud_fft.h" />
+    <ClInclude Include="SoLoud\include\soloud_fftfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_file.h" />
+    <ClInclude Include="SoLoud\include\soloud_file_hack_off.h" />
+    <ClInclude Include="SoLoud\include\soloud_file_hack_on.h" />
+    <ClInclude Include="SoLoud\include\soloud_filter.h" />
+    <ClInclude Include="SoLoud\include\soloud_flangerfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_freeverbfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_internal.h" />
+    <ClInclude Include="SoLoud\include\soloud_lofifilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_misc.h" />
+    <ClInclude Include="SoLoud\include\soloud_monotone.h" />
+    <ClInclude Include="SoLoud\include\soloud_noise.h" />
+    <ClInclude Include="SoLoud\include\soloud_openmpt.h" />
+    <ClInclude Include="SoLoud\include\soloud_queue.h" />
+    <ClInclude Include="SoLoud\include\soloud_robotizefilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_sfxr.h" />
+    <ClInclude Include="SoLoud\include\soloud_speech.h" />
+    <ClInclude Include="SoLoud\include\soloud_tedsid.h" />
+    <ClInclude Include="SoLoud\include\soloud_thread.h" />
+    <ClInclude Include="SoLoud\include\soloud_vic.h" />
+    <ClInclude Include="SoLoud\include\soloud_vizsn.h" />
+    <ClInclude Include="SoLoud\include\soloud_wav.h" />
+    <ClInclude Include="SoLoud\include\soloud_waveshaperfilter.h" />
+    <ClInclude Include="SoLoud\include\soloud_wavstream.h" />
+    <ClInclude Include="stb_image_write.h" />
+    <ClInclude Include="TileData.h" />
+    <ClInclude Include="TileManager.h" />
+    <ClInclude Include="WorldEnums.h" />
+    <ClInclude Include="ShaderUtil.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="stb_truetype.h" />
+    <ClInclude Include="TextureUtil.h" />
+    <ClInclude Include="TrueTypeFont.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\dynamicFrag.frag" />
+    <None Include="Shaders\editFrag.frag" />
+    <None Include="Shaders\font.frag" />
+    <None Include="Shaders\font.vert" />
+    <None Include="Shaders\map.frag" />
+    <None Include="Shaders\map.vert" />
+    <None Include="Shaders\natGui.frag" />
+    <None Include="Shaders\particle.frag" />
+    <None Include="Shaders\particle.vert" />
+    <None Include="Shaders\quadAnim.frag" />
+    <None Include="Shaders\screenCave.frag" />
+    <None Include="Shaders\screenImage.frag" />
+    <None Include="Shaders\screenImageCut.frag" />
+    <None Include="Shaders\screenNoSnow.frag" />
+    <None Include="Shaders\screenSnowFast.frag" />
+    <None Include="Shaders\txtBg.frag" />
+    <None Include="Shaders\ui.vert" />
+    <None Include="Shaders\vertInstance.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="3DLoader.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
